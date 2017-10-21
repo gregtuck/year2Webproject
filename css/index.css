@@ -1,0 +1,62 @@
+.navbar{
+    margin-bottom: 0;
+    background-color: #000000;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-left: 5%;
+}
+.carousel-inner img {
+
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+.navbar{
+    opacity: 0.9;
+}
+
+#about {
+    padding: 60px 50px;
+}
+
+
+
+
+
+.jumbotron{
+    background-image: url("http://i.gzn.jp/img/2016/11/24/ok-go-the-one-moment/03.jpg");
+    color: white;
+    margin-top: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+
+}
+
+#DK{
+    color: #000000;
+    background-color: white;
+
+}
+
+#AR{
+    background-color: aliceblue;
+    color: #000000;
+}
+
+#TN{
+    color: #000000;
+    background-color: white;
+}
+
+#dan{
+    background-color: aliceblue;
+    color: #000000;
+}

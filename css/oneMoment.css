@@ -1,0 +1,20 @@
+.jumbotron{
+    background-color: purple;
+    color: white;
+}
+
+.navbar button{
+    margin-top: 5%;
+}
+.btn {
+    margin-left: 10px;
+}
+
+.navbar{
+    margin-bottom: 0;
+    background-color: #000000;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-left: 5%;
+}

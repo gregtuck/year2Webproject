@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link id="pageStyle" rel="stylesheet" type="text/css" href="css/oneMoment.css"/>
+    <script type="text/JavaScript" src="script/oneMscript.js"></script>
+    <title>OKGO</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">OKGO</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="bandMembers.html">Members</a></li>
+                <li><a href="oneMoment.html">One Moment</a> </li>
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="btn btn-success" id="theatre">Theatre Mode</button></li>
+                <li><button type="button" class="btn btn-danger" id="standard">Standard Mode</button> </li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["username"]; ?></a>
+                </li>
+                <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span>
+                    SIGN IN</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="loginModal" role="dialog">
+
+    <div class="modal-dialog">
+
+
+        <div class="loginmodel-container">
+            <h1>Login to your account</h1><br>
+            <form method="post" action="login.php" id="login">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="submit" name="login" class="btn btn-success" value="Login">
+                <input type="button" class="btn btn-primary" data-dismiss="modal" value="Close">
+            </form>
+            <div class="login-help"><a href="SignUp.html"><p>Not a member? Sign up</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center">
+
+    <h1>One Moment</h1>
+</div>
+
+<div class="container-fluid">
+    <div style="text-align: center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QvW61K2s0tA" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="col-sm-10">
+    <div class="container-fluid">
+        <h2>This section is about the one moment music video</h2>
+
+        <p>The band released a video associated with the song, its production sponsored by Morton Salt to highlight
+            their
+            "Walk Her Walk" campaign. The one-shot video primarily consists of 4.2 seconds of real-time footage
+            recording
+            over 300 distinct events set in motion by the band members and timed devices, slowed down to be played over
+            the
+            length of the song.</p>
+    </div>
+</div>
+
+<div class="col-sm-10">
+    <div class="container-fluid">
+        <p>The music video for "The One Moment" features the members of OK Go interacting with various props on an
+            initially stark-white set. Many of the props are inflated balloons filled with colored liquid that splash
+            across the set pieces and the band members as they are ruptured in time to the music. The bulk of the video
+            is shown in slow motion, at times slowed at 20,000% from real-time speed to match the beat of the song.</p>
+
+           <p> Morton Salt provided financial support for the video.The company had wanted to change its brand image to
+            demonstrate that its salt was more than just a commodity but is used across a range of industries that
+            affects everyday life. They reused their mascot, the Morton Salt Girl, as part of this new branding
+            campaign, "Walk Her Walk", to show about making a positive impact. Morton's CEO Christian Herrmann stated
+            that "We want to embody her spirit to make a real, tangible difference in people's lives."The company
+            approached the band about creating a video to help with this new campaign, as they felt the band would help
+            "to bring new meaning to the brand and create relevance, especially with millennials", according to Morton's
+            director of communications and corporate brand strategy Denise Lauer. The two groups agreed that "The One
+            Moment" seemed to fit best, as the song was about the importance of every moment. The video includes
+            images of five "difference makers" that Morton felt would help inspire viewers to make a positive impact on
+               the world. The video concludes with the image of the Morton Salt Girl as well.</p>
+
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script/navbarFade.js"></script>
+</body>
+</html>
