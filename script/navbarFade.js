@@ -7,4 +7,3 @@ window.addEventListener("scroll", function() {
     }
 },false);
 
-//thi is isis 0poj
