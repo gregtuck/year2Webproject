@@ -1,4 +1,5 @@
-$(document).onload(function(){
+$(document).ready(function(){
+    $('#load_data').click(function(){
         $.ajax({
             url:"tourDates.csv",
             dataType:"text",
@@ -27,5 +28,5 @@ $(document).onload(function(){
                 $('#employee_table').html(table_data);
             }
         });
-
+    });
 });
