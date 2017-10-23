@@ -6,3 +6,5 @@ window.addEventListener("scroll", function() {
         $('.navbar-fixed-top').fadeIn();
     }
 },false);
+
+//thi is isis 0poj
