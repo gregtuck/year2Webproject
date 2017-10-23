@@ -1,0 +1,55 @@
+.body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+hr {
+    width: 30%;
+
+}
+
+h1.title {
+    font-size: 75px;
+    font-family: Helvetica, serif;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.main-centre {
+
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px 40px;
+}
+
+.main-login {
+    background-color: purple;
+    color: #ffffff;
+    border-radius: 5px;
+
+}
+
+.login-button {
+    margin-top: 5px;
+}
+
+.login-register {
+    font-size: 11px;
+    text-align: center;
+
+}
+
+p {
+    color: #737373;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+.form-group button[type=submit] {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
