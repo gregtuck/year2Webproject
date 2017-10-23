@@ -43,21 +43,36 @@
 #DK{
     color: #000000;
     background-color: white;
+    padding-bottom: 6px;
 
 }
 
 #AR{
     background-color: aliceblue;
     color: #000000;
+    padding-bottom: 6px;
 }
 
 #TN{
     color: #000000;
     background-color: white;
+    padding-bottom: 6px;
 }
 
 #dan{
     background-color: aliceblue;
     color: #000000;
+    padding-bottom: 6px;
 }
+
+.footer {
+    min-height: 50px;
+    background-color: #0f0f0f;
+    color: lightslategrey;
+    text-align: left;
+    height: 1px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
 
