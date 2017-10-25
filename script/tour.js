@@ -5,11 +5,11 @@ $(document).ready(function(){
             dataType:"text",
             success:function(data)
             {
-                var employee_data = data.split(/\r?\n|\r/);
+                var tour_dates = data.split(/\r?\n|\r/);
                 var table_data = '<table class="table table-bordered table-striped">';
-                for(var count = 0; count<employee_data.length; count++)
+                for(var count = 0; count<tour_dates.length; count++)
                 {
-                    var cell_data = employee_data[count].split(",");
+                    var cell_data = tour_dates[count].split(",");
                     table_data += '<tr>';
                     for(var cell_count=0; cell_count<cell_data.length; cell_count++)
                     {
@@ -25,7 +25,7 @@ $(document).ready(function(){
                     table_data += '</tr>';
                 }
                 table_data += '</table>';
-                $('#employee_table').html(table_data);
+                $('#table').html(table_data);
             }
         });
     });
