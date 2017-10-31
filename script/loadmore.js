@@ -1,3 +1,4 @@
+
 function loadMore(){
 
     var xhttp = new XMLHttpRequest();
@@ -11,7 +12,7 @@ function loadMore(){
         }
     };
 
-    xhttp.open("GET", "more.txt", true);
+    xhttp.open("GET", "text/more.txt", true);
 
     xhttp.send();
 }
