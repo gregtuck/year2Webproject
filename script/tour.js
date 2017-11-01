@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#load_data').click(function(){
         $.ajax({
-            url:"tourDates.csv",
+            url:"text/tourDates.csv",
             dataType:"text",
             success:function(data)
             {

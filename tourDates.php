@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/tourdates.css">
 </head>
 <body>
+<?php include ('PHP/navbar.php');?>
 <div class="container">
     <div class="table-responsive">
         <h1 align="center"><u>OKGO Future Tour Dates</u></h1>
@@ -14,7 +15,7 @@
             has never previously done this before. What could go wrong? <b>You not being there.</b></h3>
         <br/>
         <div align="center">
-            <button type="button" name="load_data" id="load_data" class="btn btn-info">Show Dates</button>
+            <button type="button" name="load_data" id="load_data" class="btn btn-success">Show Dates</button>
         </div>
         <br/>
         <div id="table">
@@ -23,6 +24,7 @@
 </div>
 
 <div id="clockdiv">
+    <h3>WE GO ON TOUR IN</h3>
     <div>
         <span class="days"></span>
         <div class="smalltext">Days</div>
@@ -41,10 +43,12 @@
     </div>
 </div>
 
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="script/tour.js"></script>
 <script src="script/countdown.js"></script>
+<script src="script/navbarFade.js"></script>
 </html>
 

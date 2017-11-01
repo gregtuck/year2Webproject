@@ -5,6 +5,7 @@
     letter-spacing: 4px;
     font-weight: bold;
     padding-left: 5%;
+    opacity: 0.9;
 }
 .carousel-inner img {
 
@@ -19,17 +20,10 @@
         display: none;
     }
 }
-.navbar{
-    opacity: 0.9;
-}
 
 #about {
     padding: 60px 50px;
 }
-
-
-
-
 
 .jumbotron{
     background-image: url("http://i.gzn.jp/img/2016/11/24/ok-go-the-one-moment/03.jpg");

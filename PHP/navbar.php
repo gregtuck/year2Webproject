@@ -12,6 +12,7 @@
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="bandMembers.php">Members</a></li>
                 <li><a href="oneMoment.html">One Moment</a></li>
+                <li><a href="tourDates.php">Tour</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["username"]; ?></a>
