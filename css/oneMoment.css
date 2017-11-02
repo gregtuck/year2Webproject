@@ -32,5 +32,27 @@
     padding-left: 10px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 650px) {
+    #content { display: none; }  /* show it on small screens */
+}
 
+@media screen and (min-width: 800px) and (max-width: 650px) {
+    #content { display: block; }   /* hide it elsewhere */
+}
+
+@media screen and (min-width: 0px) and (max-width: 650px) {
+    #standard { display: none; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 800px) and (max-width: 650px) {
+    #standard { display: block; }   /* hide it elsewhere */
+}
+
+@media screen and (min-width: 0px) and (max-width: 650px) {
+    #theatre { display: none; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 800px) and (max-width: 650px) {
+    #theatre { display: block; }   /* hide it elsewhere */
+}
 
