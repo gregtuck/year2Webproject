@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/modal.css">
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage" data-spy="scroll" data-target=".navbar">
 
 <?php include ('PHP/navbar.php');?>
 

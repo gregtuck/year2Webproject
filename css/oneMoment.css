@@ -1,6 +1,7 @@
 .jumbotron{
     background-color: purple;
     color: white;
+    margin-top: 50px;
 }
 
 .navbar button{

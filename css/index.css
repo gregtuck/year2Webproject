@@ -1,5 +1,5 @@
 .navbar{
-    margin-bottom: 0;
+    margin-bottom: 50px;
     background-color: #000000;
     font-size: 16px;
     letter-spacing: 4px;
@@ -45,6 +45,10 @@
     background-color: aliceblue;
     color: #000000;
     padding-bottom: 6px;
+}
+
+#myCarousel{
+    margin-top: 50px;
 }
 
 #TN{
