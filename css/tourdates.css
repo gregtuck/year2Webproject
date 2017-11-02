@@ -1,21 +1,19 @@
 body{
 
     font-family: sans-serif;
-    font-weight: 100;
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: center;
 }
 
-.navbar{
-    margin-bottom: 0;
+.navbar {
+    margin-bottom: 50px;
     background-color: #000000;
     font-size: 16px;
     letter-spacing: 4px;
     font-weight: bold;
     padding-left: 5%;
     opacity: 0.9;
-    text-align: left;
 }
 
 h1{
