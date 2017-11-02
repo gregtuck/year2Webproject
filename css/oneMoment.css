@@ -1,26 +1,40 @@
-.jumbotron{
+.jumbotron {
     background-color: purple;
     color: white;
     margin-top: 50px;
 }
 
-.navbar button{
-    margin-top: 5%;
-}
 .btn {
     margin-left: 10px;
+
 }
 
-.navbar{
-    margin-bottom: 0;
+#shift{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#more{
+margin-top: 2%;
+}
+
+.navbar {
+    margin-bottom: 50px;
     background-color: #000000;
     font-size: 16px;
     letter-spacing: 4px;
     font-weight: bold;
     padding-left: 5%;
+    opacity: 0.9;
 }
 
+.navbar #theatre {
+    margin-top: 6px;
+}
 
+.navbar #standard {
+    margin-top: 6px;
+}
 
 .footer {
     min-height: 50px;
@@ -32,27 +46,45 @@
     padding-left: 10px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 650px) {
-    #content { display: none; }  /* show it on small screens */
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    #content {
+        display: none;
+    }
+    /* hide it on small screens */
 }
 
-@media screen and (min-width: 800px) and (max-width: 650px) {
-    #content { display: block; }   /* hide it elsewhere */
+@media screen and (min-width: 1000px) and (max-width: 1125px) {
+    #content {
+        display: block;
+    }
+    /* show it elsewhere */
 }
 
-@media screen and (min-width: 0px) and (max-width: 650px) {
-    #standard { display: none; }  /* show it on small screens */
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    #standard {
+        display: none;
+    }
+    /* hide it on small screens */
 }
 
-@media screen and (min-width: 800px) and (max-width: 650px) {
-    #standard { display: block; }   /* hide it elsewhere */
+@media screen and (min-width: 1000px) and (max-width: 1125px) {
+    #standard {
+        display: block;
+    }
+    /* show it elsewhere */
 }
 
-@media screen and (min-width: 0px) and (max-width: 650px) {
-    #theatre { display: none; }  /* show it on small screens */
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    #theatre {
+        display: none;
+    }
+    /* hide it on small screens */
 }
 
-@media screen and (min-width: 800px) and (max-width: 650px) {
-    #theatre { display: block; }   /* hide it elsewhere */
+@media screen and (min-width: 1000px) and (max-width: 1125px) {
+    #theatre {
+        display: block;
+    }
+    /* show it elsewhere */
 }
-

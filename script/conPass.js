@@ -1,5 +1,4 @@
-function confirmPass()
-{
+function confirmPass() {
     var confirm = document.getElementById('confirmPass');
 
     var pass1 = document.getElementById('password');
@@ -8,20 +7,20 @@ function confirmPass()
     var good = "#66cc66";
     var bad = "#ff6666";
 
-    if(pass1.value === pass2.value){
+    if (pass1.value === pass2.value) {
         pass1.style.backgroundColor = good;
         pass2.style.backgroundColor = good;
-    }else {
+    } else {
         pass2.style.backgroundColor = bad;
     }
 
 }
 
 $(function () {
-$("#password").complexify({},function (valid, complexity){
-    $("#progressbar").progressbar({
-        value:complexity
+    $("#password").complexify({}, function (valid, complexity) {
+        $("#progressbar").progressbar({
+            value: complexity
+        });
     });
-});
 
 });

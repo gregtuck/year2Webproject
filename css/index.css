@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     margin-bottom: 50px;
     background-color: #000000;
     font-size: 16px;
@@ -7,14 +7,17 @@
     padding-left: 5%;
     opacity: 0.9;
 }
-.carousel-inner img {
 
-    width: 100%; /* Set width to 100% */
+.carousel-inner img {
+    width: 100%;
+    /* Set width to 100% */
     margin: auto;
 }
+
 .carousel-caption h3 {
     color: #fff !important;
 }
+
 @media (max-width: 600px) {
     .carousel-caption {
         display: none;
@@ -25,39 +28,35 @@
     padding: 60px 50px;
 }
 
-.jumbotron{
+.jumbotron {
     background-image: url("http://i.gzn.jp/img/2016/11/24/ok-go-the-one-moment/03.jpg");
     color: white;
-    margin-top: 10%;
-    margin-right: 3%;
-    margin-left: 3%;
-
+    margin-top: 50px;
 }
 
-#DK{
+#DK {
     color: #000000;
     background-color: white;
     padding-bottom: 6px;
-
 }
 
-#AR{
+#AR {
     background-color: aliceblue;
     color: #000000;
     padding-bottom: 6px;
 }
 
-#myCarousel{
+#myCarousel {
     margin-top: 50px;
 }
 
-#TN{
+#TN {
     color: #000000;
     background-color: white;
     padding-bottom: 6px;
 }
 
-#dan{
+#dan {
     background-color: aliceblue;
     color: #000000;
     padding-bottom: 6px;
@@ -72,5 +71,3 @@
     padding-top: 3px;
     padding-left: 10px;
 }
-
-

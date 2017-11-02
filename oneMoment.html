@@ -21,7 +21,6 @@
             </button>
             <a class="navbar-brand" href="index.php">OKGO</a>
         </div>
-
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="bandMembers.php">Members</a></li>
@@ -38,44 +37,42 @@
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["username"]; ?></a>
                 </li>
                 <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span>
-                    SIGN IN</a></li>
+                    SIGN IN</a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
-
 <div class="modal fade" id="loginModal" role="dialog">
     <div class="modal-dialog">
         <div class="loginmodel-container">
-            <h1>Login to your account</h1><br>
+            <h1>Login to your account</h1>
+            <br>
             <form method="post" action="login.php" id="login">
                 <input type="text" name="username" id="username" placeholder="Username">
                 <input type="password" name="password" id="password" placeholder="Password">
                 <input type="submit" name="login" class="btn btn-success" value="Login">
                 <input type="button" class="btn btn-primary" data-dismiss="modal" value="Close">
             </form>
-            <div class="login-help"><a href="SignUp.html"><p>Not a member? Sign up</p></a>
+            <div class="login-help">
+                <a href="SignUp.html">
+                    <p>Not a member? Sign up</p>
+                </a>
             </div>
         </div>
     </div>
 </div>
-
 <div class="jumbotron text-center">
-
     <h1>One Moment</h1>
 </div>
-
 <div class="container-fluid">
     <div id="content" style="text-align: center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/QvW61K2s0tA" frameborder="0"
                 allowfullscreen></iframe>
     </div>
-
-
     <div class="col-sm-10">
         <div class="container-fluid">
             <h2>This section is about the one moment music video</h2>
-
             <p>The band released a video associated with the song, its production sponsored by Morton Salt to highlight
                 their
                 "Walk Her Walk" campaign. The one-shot video primarily consists of 4.2 seconds of real-time footage
@@ -83,10 +80,10 @@
                 over 300 distinct events set in motion by the band members and timed devices, slowed down to be played
                 over
                 the
-                length of the song.</p>
+                length of the song.
+            </p>
         </div>
     </div>
-
     <div class="col-sm-10">
         <div class="container-fluid">
             <p>The music video for "The One Moment" features the members of OK Go interacting with various props on an
@@ -95,8 +92,8 @@
                 across the set pieces and the band members as they are ruptured in time to the music. The bulk of the
                 video
                 is shown in slow motion, at times slowed at 20,000% from real-time speed to match the beat of the
-                song.</p>
-
+                song.
+            </p>
             <p> Morton Salt provided financial support for the video.The company had wanted to change its brand image to
                 demonstrate that its salt was more than just a commodity but is used across a range of industries that
                 affects everyday life. They reused their mascot, the Morton Salt Girl, as part of this new branding
@@ -112,17 +109,14 @@
                 Moment" seemed to fit best, as the song was about the importance of every moment. The video includes
                 images of five "difference makers" that Morton felt would help inspire viewers to make a positive impact
                 on
-                the world. The video concludes with the image of the Morton Salt Girl as well.</p>
-
-
-
+                the world. The video concludes with the image of the Morton Salt Girl as well.
+            </p>
             <div id="loadmore">
-                <button type="button" class="btn btn-primary" onclick="loadMore()">See More</button>
-                <br />
+                <button type="button" id="shift" class="btn-lg btn-primary" onclick="loadMore()">See More</button>
+                <br/>
                 <p id="more"></p>
             </div>
         </div>
-
     </div>
 </div>
 <footer id="footer" role="contentinfo" class="footer table-row full-width">
@@ -132,7 +126,6 @@
         </div>
     </div>
 </footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="script/navbarFade.js"></script>

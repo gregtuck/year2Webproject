@@ -1,35 +1,31 @@
- body{
+body {
     background-color: #a811db;
 }
 
-
-.menuBox{
+.menuBox {
     display: inline-block;
     height: 350px;
     margin-top: 4px;
-    padding:30px auto;
+    padding: 30px auto;
     text-align: center;
     width: 350px;
     color: white;
     font-family: "Helvetica", Helvetica, sans-serif;
     font-weight: bold;
-
 }
 
-.menuBox img{
+.menuBox img {
     padding-top: 40px;
     height: 265px;
     width: 265px;
 }
 
-.menuBox:hover{
+.menuBox:hover {
     color: white;
     background-color: #1150db;
     border-color: white;
-
 }
 
-.container{
+.container {
     margin-top: 3%;
 }
-

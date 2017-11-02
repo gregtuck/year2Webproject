@@ -1,9 +1,10 @@
 body{
-    text-align: center;
+
     font-family: sans-serif;
     font-weight: 100;
     margin-top: 10%;
     margin-bottom: 10%;
+    text-align: center;
 }
 
 .navbar{
@@ -14,6 +15,7 @@ body{
     font-weight: bold;
     padding-left: 5%;
     opacity: 0.9;
+    text-align: left;
 }
 
 h1{
@@ -30,6 +32,8 @@ h1{
     font-weight: 100;
     text-align: center;
     font-size: 30px;
+    align-content: center;
+
 }
 
 #clockdiv > div{
@@ -64,4 +68,8 @@ h1{
     height: 1px;
     padding-top: 3px;
     padding-left: 10px;
+}
+
+.container-fluid{
+
 }
