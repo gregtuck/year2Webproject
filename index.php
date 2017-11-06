@@ -24,7 +24,7 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="images/okgo1.jpg" alt="Pony" width="1200" height="700">
+            <img src="images/okgo.jpg" alt="Pony" width="1200" height="700">
         </div>
 
         <div class="item">

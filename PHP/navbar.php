@@ -1,3 +1,18 @@
+<?php
+ob_start();
+session_start();
+require_once 'connect.php';
+
+if (!isset($_SESSION['user'])){
+    header("Location: signUp.php");
+    exit;
+}
+
+$res = $conn->query("SELECT * FROM users WHERE id=" . $_SESSION['user']);
+$userRow = mysqli_fetch_array($res,MYSQLI_ASSOC);
+?>
+
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
