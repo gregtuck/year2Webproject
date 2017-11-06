@@ -26,7 +26,7 @@ $userRow = mysqli_fetch_array($res,MYSQLI_ASSOC);
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="bandMembers.php">Members</a></li>
-                <li><a href="oneMoment.html">One Moment</a></li>
+                <li><a href="oneMoment.php">One Moment</a></li>
                 <li><a href="tourDates.php">Tour</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -34,6 +34,7 @@ $userRow = mysqli_fetch_array($res,MYSQLI_ASSOC);
                 </li>
                 <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span>
                         SIGN IN</a></li>
+                <li><a href="PHP/logout.php"><span class="glyphicon glyphicon-remove-sign"></span>logout</a></li>
             </ul>
         </div>
     </div>

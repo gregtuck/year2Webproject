@@ -14,8 +14,17 @@
     margin-top: 2%;
 }
 
+#second{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
 #more{
 margin-top: 2%;
+}
+
+#more1{
+    margin-top: 2%;
 }
 
 .navbar {
@@ -87,4 +96,9 @@ margin-top: 2%;
         display: block;
     }
     /* show it elsewhere */
+}
+
+#newsletter{
+
+    margin-left: 45%;
 }

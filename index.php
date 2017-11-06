@@ -73,6 +73,9 @@
     </div>
 </div>
 
+
+
+
 <?php include ('PHP/footer.php');?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -1,0 +1,13 @@
+<div id="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
+                <h3>Get the latest news</h3>
+                <form method="post" id="register-newsletter">
+                    <input type="text" name="newsletter" required>
+                        <input type="submit" class="btn btn-danger" name="subs" value="SIGN UP">
+                </form>
+            </div>
+        </div>
+    </div
+</div>

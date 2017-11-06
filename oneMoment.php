@@ -1,3 +1,37 @@
+<?php
+
+include_once 'PHP/connect.php';
+
+if (isset($_POST['subs'])) {
+
+    $sub = trim($_POST['newsletter']);
+    $sub = stripslashes($sub);
+
+    $stmt = $conn->prepare("SELECT email FROM subscribers WHERE email=?");
+    $stmt->bind_param("s", $sub);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+
+    $count = $result->num_rows;
+
+    if ($count == 0) {
+
+        $stmts = $conn->prepare("INSERT INTO subscribers (email) VALUES(?)");
+        $stmts->bind_param("s", $sub);
+        $res = $stmts->execute();
+        $stmts->close();
+
+    }else {
+        $errtype = "warning";
+        $errmessage = "Email is already used";
+    }
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +58,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="bandMembers.php">Members</a></li>
-                <li><a href="oneMoment.html">One Moment</a></li>
+                <li><a href="oneMoment.php">One Moment</a></li>
                 <li><a href="tourDates.php">Tour</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -112,9 +146,11 @@
                 the world. The video concludes with the image of the Morton Salt Girl as well.
             </p>
             <div id="loadmore">
+
                 <button type="button" id="shift" class="btn-lg btn-primary" onclick="loadMore()">See More</button>
                 <br/>
                 <p id="more"></p>
+                <br />
             </div>
         </div>
     </div>

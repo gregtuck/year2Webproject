@@ -5,7 +5,7 @@ session_start();
 if (isset($_SESSION['user']) != ""){
     header("Location: index.php");
 }
-include_once 'connect.php';
+include_once 'PHP/connect.php';
 
 if(isset($_POST['signup'])) {
 
@@ -13,6 +13,10 @@ if(isset($_POST['signup'])) {
     $email = trim($_POST['email']);
     $username = trim($_POST['username']);
     $pass = trim($_POST['password']);
+    $name = stripslashes($name);
+    $email = stripslashes($email);
+    $username = stripslashes($username);
+    $password = stripslashes($pass);
 
     $options = [
         'cost' => 12,
