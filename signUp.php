@@ -2,12 +2,12 @@
 ob_start();
 session_start();
 
-if (isset($_SESSION['user']) != ""){
+if (isset($_SESSION['user']) != "") {
     header("Location: index.php");
 }
-include_once 'PHP/connect.php';
+require_once 'PHP/connect.php';
 
-if(isset($_POST['signup'])) {
+if (isset($_POST['signup'])) {
 
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
@@ -16,13 +16,13 @@ if(isset($_POST['signup'])) {
     $name = stripslashes($name);
     $email = stripslashes($email);
     $username = stripslashes($username);
-    $password = stripslashes($pass);
+    $pass = stripslashes($pass);
 
     $options = [
         'cost' => 12,
     ];
 
-    $password = password_hash($pass,CRYPT_BLOWFISH,$options);
+    $password = password_hash($pass, CRYPT_BLOWFISH, $options);
 
     $stmt = $conn->prepare("SELECT email FROM users WHERE email=?");
     $stmt->bind_param("s", $email);
@@ -48,13 +48,10 @@ if(isset($_POST['signup'])) {
                 header("location: index.php");
                 exit;
             }
-        } else {
-            $errtype = "danger";
-            $errmessage = "Something went wrong there, try again";
         }
-    }else {
-        $errtype = "warning";
-        $errmessage = "Email is already used";
+    } else {
+        $errTyp = "warning";
+        $errMsg = "Email is already used, please enter another";
     }
 
 }
@@ -85,7 +82,17 @@ if(isset($_POST['signup'])) {
 
 <div class="main-login main-centre">
     <form class="form-horizontal" method="post">
-
+        <?php
+        if (isset($errMsg)) {
+            ?>
+            <div class="form-group">
+                <div class="alert alert-<?php echo ($errTyp == "success") ? "success" : $errTyp; ?>">
+                    <span class="glyphicon glyphicon-info-sign"></span> <?php echo $errMsg; ?>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Name</label>
             <div class="col-sm-8">
@@ -125,7 +132,8 @@ if(isset($_POST['signup'])) {
                 <div id="complexify">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        <input type="password" class="form-control" name="password" id="password"
+                               placeholder="Password">
                     </div>
                     <div class="progress">
                         <div id="complexity-bar" class="progress-bar" role="progressbar">
@@ -147,7 +155,9 @@ if(isset($_POST['signup'])) {
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block login-button" name="signup" id="reg">Register</button>
+            <button type="submit" class="btn btn-success btn-lg btn-block login-button" name="signup" id="reg">
+                Register
+            </button>
         </div>
     </form>
 </div>

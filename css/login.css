@@ -1,0 +1,19 @@
+body{
+
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    background-color: #d9534f;
+}
+
+.login-box{
+    background: white;
+    width: 500px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 0 0 70px 0;
+    border: #2980b9 4px solid;
+    font-family: Helvetica, serif;
+}
