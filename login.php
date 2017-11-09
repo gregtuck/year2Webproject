@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 ob_start();
 
@@ -9,8 +8,6 @@ if(isset($_SESSION['user'])){
 }
 
 require_once 'PHP/connect.php';
-
-
 
 if (isset($_POST['login'])) {
 
@@ -40,11 +37,7 @@ if (isset($_POST['login'])) {
         $errormsg = "Incorrect Email/Password";
     }
 }
-
-
-
 ?>
-
 
 <!DOCTYPE HTML>
 <html>
