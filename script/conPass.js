@@ -13,11 +13,10 @@ function confirmPass() {
     } else {
         pass2.style.backgroundColor = bad;
     }
-
 }
 
-$(function () {
-    $("#password").complexify({}, function (valid, complexity) {
+$(function() {
+    $("#password").complexify({}, function(valid, complexity) {
         $("#progressbar").progressbar({
             value: complexity
         });
