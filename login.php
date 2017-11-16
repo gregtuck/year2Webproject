@@ -11,7 +11,7 @@ if (isset($_POST['login'])) {
     $pass = trim($_POST['password']);
     $email = stripslashes($email);
     $pass = stripslashes($pass);
-    $stmt = $conn->prepare("SELECT user_id, username, password FROM users WHERE email=?");
+    $stmt = $conn->prepare("SELECT user_id, username, password, usertype FROM users WHERE email=?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -22,6 +22,7 @@ if (password_verify($pass, $row['password']))
 {
     $_SESSION['user'] = $row['user_id'];
     $_SESSION['username'] = $row['username'];
+    $_SESSION['usertype'] = $row['usertype'];
     header("Location: index.php");
 }
 else{

@@ -1,4 +1,12 @@
 <?PHP
+ob_start();
+session_start();
+
+if(isset($_SESSION['usertype'])!='admin'){
+    header("Location: index.php");
+    exit;
+}
+
 
 require_once 'PHP/connect.php';
 
