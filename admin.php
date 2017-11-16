@@ -1,3 +1,60 @@
+<?PHP
+
+require_once 'PHP/connect.php';
+
+if (isset($_POST['deleteUser'])) {
+    $email = trim($_POST['email-address']);
+    $email = stripslashes($email);
+
+    $stmt = $conn->prepare("SELECT email FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+
+    $count = $result->num_rows;
+
+    if ($count == 1) {
+
+        $stmt = $conn->prepare("DELETE FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->close();
+        header("location: admin.php");
+    } else {
+        $errType = "Warning";
+        $errMsg = "User does not exit";
+    }
+}
+
+if (isset($_POST['makeAdmin'])) {
+    $id = trim($_POST['id']);
+    $id = stripslashes($id);
+
+    $stmt = $conn->prepare("SELECT user_id FROM users WHERE user_id = ?");
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+
+    $count = $result->num_rows;
+
+    if ($count == 1) {
+
+        $stmt = $conn->prepare("UPDATE users SET usertype = 'admin' WHERE user_id = ?");
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $stmt->close();
+        //header("location: admin.php");
+    } else {
+        $errType = "warning";
+        $errMsg = "user does not exist";
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,24 +122,36 @@
 </div>
 <div id="admin-users" class="container-fluid">
     <div class="col-sm-3">
-        <form>
+        <form method="post">
             <div class="form-group">
                 <label for="id">ID</label>
                 <input type="text" class="form-control" name="id" id="id" placeholder="Enter User ID">
                 <small id="id-help" class="form-text text-muted">Enter User ID you wish to delete</small>
             </div>
-            <button type="submit" name="deleteUser" class="btn btn-primary">Delete User</button>
+            <button type="submit" name="makeAdmin" class="btn btn-primary">Make Admin</button>
         </form>
     </div>
     <div class="col-sm-3">
-        <form action="#" method="post">
+        <form method="post">
+            <?php
+            if (isset($errMsg)) {
+                ?>
+                <div class="form-group">
+                    <div class="alert alert-<?php echo ($errTyp == "success") ? "success" : $errTyp; ?>">
+                        <span class="glyphicon glyphicon-info-sign"></span> <?php echo $errMsg; ?>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
             <div class="form-group">
                 <label for="email-address">Email Address</label>
-                <input type="email" class="form-control" name="email-address" id="email-address" aria-describedby="emailHelp"
+                <input type="email" class="form-control" name="email-address" id="email-address"
+                       aria-describedby="emailHelp"
                        placeholder="Enter Email">
                 <small id="email-help" class="form-text text-muted">details must belong to existing user</small>
             </div>
-            <button type="submit" name="makeAdmin" class="btn btn-primary">Make Admin</button>
+            <button type="submit" name="deleteUser" class="btn btn-primary">Delete Account</button>
         </form>
     </div>
 </div>
