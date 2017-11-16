@@ -15,8 +15,8 @@ function confirmPass() {
     }
 }
 
-$(function() {
-    $("#password").complexify({}, function(valid, complexity) {
+$(function () {
+    $("#password").complexify({}, function (valid, complexity) {
         $("#progressbar").progressbar({
             value: complexity
         });

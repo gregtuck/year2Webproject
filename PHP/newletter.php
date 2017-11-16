@@ -10,8 +10,8 @@
                     <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
                         <input type="text" id="" name="" placeholder="your@email.com">
                     </div>
-                    <br />
-                    <input type="submit" value="Subscribe Now!" class="btn btn-large" />
+                    <br/>
+                    <input type="submit" value="Subscribe Now!" class="btn btn-large"/>
                 </form>
             </div>
         </div>

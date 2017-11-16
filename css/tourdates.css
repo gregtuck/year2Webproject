@@ -1,4 +1,4 @@
-body{
+body {
 
     font-family: sans-serif;
     margin-top: 10%;
@@ -16,14 +16,14 @@ body{
     opacity: 0.9;
 }
 
-h1{
+h1 {
     color: black;
     font-weight: 100;
     font-size: 40px;
     margin: 40px 0px 20px;
 }
 
-#clockdiv{
+#clockdiv {
     font-family: sans-serif;
     color: #fff;
     display: inline-block;
@@ -34,29 +34,28 @@ h1{
 
 }
 
-#clockdiv > div{
+#clockdiv > div {
     padding: 10px;
     border-radius: 3px;
     background: grey;
     display: inline-block;
 }
 
-#clockdiv div > span{
+#clockdiv div > span {
     padding: 15px;
     border-radius: 3px;
     background: darkblue;
     display: inline-block;
 }
 
-#clockdiv h3{
+#clockdiv h3 {
     color: black;
 }
 
-.smalltext{
+.smalltext {
     padding-top: 5px;
     font-size: 16px;
 }
-
 
 .footer {
     min-height: 50px;
@@ -68,6 +67,6 @@ h1{
     padding-left: 10px;
 }
 
-.container-fluid{
+.container-fluid {
 
 }

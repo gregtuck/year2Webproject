@@ -1,4 +1,4 @@
-body{
+body {
 
     width: 100%;
     text-align: center;
@@ -6,7 +6,7 @@ body{
     background-color: #d9534f;
 }
 
-.login-box{
+.login-box {
     background: white;
     width: 500px;
     border-radius: 6px;

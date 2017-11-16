@@ -1,18 +1,17 @@
-body{
+body {
     background-color: #2b669a;
 
 }
 
-.container{
+.container {
     color: white;
     font-size: 70px;
     font-weight: bold;
     text-align: center;
 
-
 }
 
-.info{
+.info {
     color: white;
     text-align: center;
 
@@ -27,9 +26,7 @@ body{
 
 }
 
-
-
-.typed-cursor{
+.typed-cursor {
     opacity: 10;
     -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
@@ -37,7 +34,7 @@ body{
     color: white;
 }
 
-#test{
+#test {
     font-family: sans-serif;
     color: #ffffff;
     font-weight: bold;
@@ -45,22 +42,43 @@ body{
     text-align: center;
 
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.buttons{
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.buttons {
     text-align: center;
 }

@@ -1,9 +1,9 @@
-$(document).ready(function() {
-    $('#load_data').click(function() {
+$(document).ready(function () {
+    $('#load_data').click(function () {
         $.ajax({
             url: "text/tourDates.csv",
             dataType: "text",
-            success: function(data) {
+            success: function (data) {
                 var tour_dates = data.split(/\r?\n|\r/);
                 var table_data = '<table class="table table-bordered table-striped">';
                 for (var count = 0; count < tour_dates.length; count++) {

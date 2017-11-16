@@ -1,4 +1,4 @@
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
     if (window.scrollY > 25) {
         $('.navbar-fixed-top').fadeOut();
     } else {

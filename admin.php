@@ -2,7 +2,7 @@
 ob_start();
 session_start();
 
-if(isset($_SESSION['usertype'])!='admin'){
+if (isset($_SESSION['usertype']) != 'admin') {
     header("Location: main.php");
     exit;
 }

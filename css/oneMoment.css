@@ -9,21 +9,21 @@
 
 }
 
-#shift{
+#shift {
     margin-left: 2%;
     margin-top: 2%;
 }
 
-#second{
+#second {
     margin-left: 2%;
     margin-top: 2%;
 }
 
-#more{
-margin-top: 2%;
+#more {
+    margin-top: 2%;
 }
 
-#more1{
+#more1 {
     margin-top: 2%;
 }
 
@@ -55,11 +55,11 @@ margin-top: 2%;
     padding-left: 10px;
 }
 
-
 @media screen and (min-width: 0px) and (max-width: 1000px) {
     #content {
         display: none;
     }
+
     /* hide it on small screens */
 }
 
@@ -67,6 +67,7 @@ margin-top: 2%;
     #content {
         display: block;
     }
+
     /* show it elsewhere */
 }
 
@@ -74,6 +75,7 @@ margin-top: 2%;
     #standard {
         display: none;
     }
+
     /* hide it on small screens */
 }
 
@@ -81,6 +83,7 @@ margin-top: 2%;
     #standard {
         display: block;
     }
+
     /* show it elsewhere */
 }
 
@@ -88,6 +91,7 @@ margin-top: 2%;
     #theatre {
         display: none;
     }
+
     /* hide it on small screens */
 }
 
@@ -95,10 +99,11 @@ margin-top: 2%;
     #theatre {
         display: block;
     }
+
     /* show it elsewhere */
 }
 
-#newsletter{
+#newsletter {
 
     margin-left: 45%;
 }

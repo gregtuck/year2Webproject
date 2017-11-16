@@ -32,6 +32,7 @@ body {
     #content {
         display: none;
     }
+
     /* hide it on small screens */
 }
 
@@ -39,6 +40,7 @@ body {
     #content {
         display: block;
     }
+
     /* show it elsewhere */
 }
 
@@ -46,6 +48,7 @@ body {
     #standard {
         display: none;
     }
+
     /* hide it on small screens */
 }
 
@@ -53,6 +56,7 @@ body {
     #standard {
         display: block;
     }
+
     /* show it elsewhere */
 }
 
@@ -60,6 +64,7 @@ body {
     #theatre {
         display: none;
     }
+
     /* hide it on small screens */
 }
 
@@ -67,5 +72,6 @@ body {
     #theatre {
         display: block;
     }
+
     /* show it elsewhere */
 }
