@@ -74,7 +74,7 @@ if (isset($_POST['makeAdmin'])) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/modal.css">
+
 </head>
 <body>
 <?php include('PHP/navbar.php'); ?>

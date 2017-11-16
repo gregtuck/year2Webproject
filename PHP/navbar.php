@@ -3,7 +3,7 @@ ob_start();
 session_start();
 require_once 'connect.php';
 if (!isset($_SESSION['user'])){
-header("Location: index.html");
+header("Location: index.php");
 exit;
 }
 $res = $conn->query("SELECT * FROM users WHERE user_id=" . $_SESSION['user']);
@@ -26,7 +26,7 @@ $userRow = mysqli_fetch_array($res,MYSQLI_ASSOC);
                 <li><a href="tourDates.php">Tour</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["username"]; ?></a>
+                <li><a href="admin.php"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["username"]; ?></a>
             </li>
             <li><a href="PHP/logout.php"><span class="glyphicon glyphicon-remove-sign"></span>logout</a></li>
         </ul>
