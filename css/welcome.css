@@ -1,0 +1,66 @@
+body{
+    background-color: #2b669a;
+
+}
+
+.container{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.info{
+    color: white;
+    text-align: center;
+
+}
+
+.jumbotron {
+    background-color: #2b669a;
+    color: white;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+
+
+.typed-cursor{
+    opacity: 10;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    color: white;
+}
+
+#test{
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.buttons{
+    text-align: center;
+}

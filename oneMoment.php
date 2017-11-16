@@ -50,7 +50,7 @@ if (isset($_POST['subs'])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">OKGO</a>
+                    <a class="navbar-brand" href="main.php">OKGO</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-left">

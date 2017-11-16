@@ -3,7 +3,7 @@ ob_start();
 session_start();
 require_once 'connect.php';
 if (!isset($_SESSION['user'])){
-header("Location: signUp.php");
+header("Location: index.html");
 exit;
 }
 $res = $conn->query("SELECT * FROM users WHERE user_id=" . $_SESSION['user']);
@@ -17,7 +17,7 @@ $userRow = mysqli_fetch_array($res,MYSQLI_ASSOC);
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">OKGO</a>
+            <a class="navbar-brand" href="main.php">OKGO</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-left">

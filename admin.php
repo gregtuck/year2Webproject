@@ -3,7 +3,7 @@ ob_start();
 session_start();
 
 if(isset($_SESSION['usertype'])!='admin'){
-    header("Location: index.php");
+    header("Location: main.php");
     exit;
 }
 

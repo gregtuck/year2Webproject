@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 if(isset($_SESSION['user'])){
-header("Location: index.php");
+header("Location: main.php");
 exit;
 }
 require_once 'PHP/connect.php';
@@ -23,7 +23,7 @@ if (password_verify($pass, $row['password']))
     $_SESSION['user'] = $row['user_id'];
     $_SESSION['username'] = $row['username'];
     $_SESSION['usertype'] = $row['usertype'];
-    header("Location: index.php");
+    header("Location: main.php");
 }
 else{
     $errormsg = "Incorrect Email/Password";

@@ -3,7 +3,7 @@ ob_start();
 session_start();
 
 if (isset($_SESSION['user']) != "") {
-    header("Location: index.php");
+    header("Location: main.php");
 }
 require_once 'PHP/connect.php';
 
@@ -45,7 +45,7 @@ if (isset($_POST['signup'])) {
             $_SESSION['username'] = $username;
             if (isset($_SESSION['user'])) {
                 print_r($_SESSION);
-                header("location: index.php");
+                header("location: main.php");
                 exit;
             }
         }
