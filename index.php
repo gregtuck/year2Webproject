@@ -1,9 +1,10 @@
 <?php
+session_set_cookie_params(86400);
 session_start();
 ob_start();
 
 
-if (isset($_SESSION['user'])) {
+if (isset($_SESSION['username'])) {
     header("Location: main.php");
     exit;
 }
