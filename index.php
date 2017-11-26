@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
             <div class="modal-dialog">
                 <div class="loginmodel-container">
                     <h1>Login to your account</h1><br>
-                    <form method="post" id="login">
+                    <form method="post" id="form-horizontal">
                         <div class="login-box">
                             <?php
                             if (isset($errormsg)) {
@@ -88,5 +88,6 @@ if (isset($_POST['login'])) {
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script/formAjax.js"></script>
 </body>
 </html>

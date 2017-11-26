@@ -79,7 +79,7 @@ if (isset($_POST['signup'])) {
     </div>
 </div>
 <div class="main-login main-centre">
-    <form class="form-horizontal" method="post">
+    <form class="form-horizontal" id="signup" method="post">
         <?php
         if (isset($errMsg)) {
             ?>
@@ -148,19 +148,21 @@ if (isset($_POST['signup'])) {
             </div>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block login-button" name="signup" id="reg">
+            <button type="submit" class="btn btn-success btn-lg btn-block login-button" id="signup" name="signup" id="reg">
                 Register
             </button>
         </div>
     </form>
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="script/PassValid.js"></script>
+<script src="script/conPass.js"></script>
+<script src="script/formAjax.js"></script>
 <script src="script/conPass.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="Jquery/jquery.complexify.js"></script>
 <script type="text/javascript" src="Jquery/jquery.complexify.banlist.js"></script>
 <script type="text/javascript" src="Jquery/complex.js"></script>
 <script type="text/javascript" src="script/sessionStorage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 </body>
 </html>

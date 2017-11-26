@@ -134,7 +134,7 @@ if (isset($_POST['makeAdmin'])) {
             <div class="form-group">
                 <label for="id">ID</label>
                 <input type="text" class="form-control" name="id" id="id" placeholder="Enter User ID">
-                <small id="id-help" class="form-text text-muted">Enter User ID you wish to delete</small>
+                <small id="id-help" class="form-text text-muted">Enter User ID you wish to give admin status</small>
             </div>
             <button type="submit" name="makeAdmin" class="btn btn-primary">Make Admin</button>
         </form>
